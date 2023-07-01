@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4,1fr);
+
+}
+
+.header{
+    background-color: cornsilk;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.header div{
+    padding: 1em;
+}
+
+.search-bar{
+    width: 600px;
+}
+
+.sidebar{
+    background-color: darkorchid;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.sidebar div{
+    padding: 1em;
+}
+
+.dash-head{
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav{
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.tools{
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.body{
+    background-color: plum;
+    grid-column: 2/4;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.small-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.large-card{
+    display: grid;
+    gap: 15px;
+}
+
+.sContent{
+    width: 250px;
+    height: 175px;
+    background-color:wheat;
+    border-radius: 10px;
+}
+
+.lContent{
+    width: 250px;
+    height: 400px;
+    background-color: wheat;
+    border-radius: 10px;
+    grid-column: 3/4;
+}
