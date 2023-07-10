@@ -7,56 +7,109 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
+    max-height: max-content;
 
 }
 
 .header{
-    background-color: cornsilk;
+    background-color: rosybrown;
     grid-column: 2/4;
+    grid-row: 1/2;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.greet-clause{
+    font-weight: bold;
+}
+
+.name{
+    font-weight: bolder;
+    font-size: 20px;
+    overflow:auto;
+}
+
+.user{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+button{
+    display: inline-block;
+    background-color: darkorchid;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    width: 80px;
+    height: 35px;
+
+}
+
+#new{
+grid-column: 3/4;
+}
+
+#upload{
+grid-column: 4/5;
+}
+
+#share{
+grid-column: 5/6;
 }
 
 .header div{
-    padding: 1em;
 }
 
 .search-bar{
-    width: 600px;
+ 
 }
 
 .sidebar{
+    width: 250px;
     background-color: darkorchid;
     grid-column: 1/2;
-    grid-row: 1/-1;
+    grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr;
-    
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .sidebar div{
-    padding: 1em;
+    padding: .5rem;
+}
+
+.item{
+    margin: 1rem;
 }
 
 .dash-head{
-    padding: 15px;
     font-size: 24px;
     font-weight: 600;
     color: white;
 }
 
 .nav{
-    padding: 15px;
     font-size: 16px;
     color: white;
     font-weight: 600;
 }
 
-.tools{
-    padding: 15px;
+.support{
     font-size: 16px;
     color: white;
     font-weight: 600;
@@ -68,32 +121,38 @@
     grid-row: 2/5;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows:max-content;
     gap: 15px;
-    padding: 20px;
+    padding: 25px;
 }
 
 .small-card{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
+    max-height: 800px;
 }
 
 .large-card{
     display: grid;
+    grid-template-rows: 1fr max-content 1fr;
     gap: 15px;
+    max-height: 785px;
 }
 
 .sContent{
-    width: 250px;
-    height: 175px;
     background-color:wheat;
     border-radius: 10px;
+    border-left: 10px solid darkorchid;
+    margin-bottom: 15px;
 }
 
 .lContent{
-    width: 250px;
-    height: 400px;
     background-color: wheat;
     border-radius: 10px;
-    grid-column: 3/4;
+}
+
+.body p {
+    font-size: 20px;
+    font-weight: 600;
 }
